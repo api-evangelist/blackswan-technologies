@@ -1,0 +1,62 @@
+generated: '2026-08-02'
+method: searched
+source: https://github.com/BstLabs/py-clvm
+note: >-
+  These are first-party command line tools from BST LABS, BlackSwan Technologies' software
+  engineering unit. They are cloud-development and cloud-VM management tools produced
+  alongside CAIOS — they are NOT a CLI for a BlackSwan API, because BlackSwan Technologies
+  publishes no public API.
+clis:
+- name: clvm
+  package: pyclvm
+  version: 1.1.11
+  description: Cloud VM command line tool for starting, stopping, listing, tunnelling
+    into and port-forwarding cloud instances on AWS, Azure and GCP, with VS Code Remote
+    integration.
+  repo: https://github.com/BstLabs/py-clvm
+  changelog: https://github.com/BstLabs/py-clvm/blob/main/CHANGELOG.md
+  license: https://github.com/BstLabs/py-clvm/blob/main/LICENSE.md
+  install:
+  - method: pip
+    command: pip3 install pyclvm
+  - method: local-development
+    command: flit install --symlink
+  built_on: dynacli
+  platforms:
+  - aws
+  - azure
+  - gcp
+  capabilities:
+  - Instance start/stop and listing operations
+  - SSH key generation and tunneling
+  - Session management
+  - Port redirection (forwarding)
+  - VS Code Remote utilities
+  examples:
+  - command: clvm ssh new <vm_instance_name> platform=<aws|gcp|azure>
+    description: Create a new SSH session to a cloud VM instance.
+  - command: clvm vscode start <vm_instance_name>
+    description: Start a VS Code Remote session against a cloud VM instance.
+- name: dynacli
+  package: dynacli
+  version: 1.0.8
+  description: Python package structure interpreter that makes any public function
+    executable from the command line — the CLI framework the other BST LABS tools are
+    built on.
+  repo: https://github.com/BstLabs/py-dynacli
+  docs: https://bstlabs.github.io/py-dynacli/
+  install:
+  - method: pip
+    command: pip install dynacli
+  docs_sections:
+  - Python Types Intro
+  - Tutorial — TODO app
+  - Reference Manual (installation, CLI entrypoint, commands, features)
+  - Advanced Reference Manual (rationale, supported types, docstrings, search path,
+    state machine)
+x-evidence:
+  fetched: '2026-08-02'
+  urls:
+  - https://raw.githubusercontent.com/BstLabs/py-clvm/main/README.md
+  - https://bstlabs.github.io/py-dynacli/
+  http_status: 200

@@ -1,0 +1,95 @@
+generated: '2026-08-02'
+method: searched
+source: https://github.com/BstLabs
+note: >-
+  BlackSwan Technologies publishes no client SDK, because it publishes no public API.
+  The packages below are the first-party open source developer tools published by BST
+  LABS, BlackSwan Technologies' software engineering unit and the team behind CAIOS
+  (Cloud AI Operating System). Every package was verified on PyPI with the publisher
+  email "BST Labs <bstlabs@caios.io>" and a project URL pointing at github.com/BstLabs.
+  They are developer tooling, NOT client libraries for a BlackSwan API — no `SDKs`
+  pointer is emitted for that reason.
+registries_probed:
+- registry: pypi
+  result: 5 first-party packages found
+- registry: npm
+  result: none first-party (npm "blackswan-sdk" is BlackSwan Protocol, an unrelated
+    crypto project)
+- registry: maven-central
+  result: none found
+- registry: nuget
+  result: none found
+- registry: pkg.go.dev
+  result: none found
+- registry: rubygems
+  result: none found
+- registry: packagist
+  result: none found
+- registry: crates.io
+  result: none found
+packages:
+- language: python
+  registry: pypi
+  name: dynacli
+  version: 1.0.8
+  url: https://pypi.org/project/dynacli/
+  install: pip install dynacli
+  source: https://github.com/BstLabs/py-dynacli
+  docs: https://bstlabs.github.io/py-dynacli/
+  description: Cloud-friendly Python library that converts pure Python functions into
+    Linux shell commands without decorators.
+  publisher: BST Labs <bstlabs@caios.io>
+  official: true
+- language: python
+  registry: pypi
+  name: pyclvm
+  version: 1.1.11
+  url: https://pypi.org/project/pyclvm/
+  install: pip3 install pyclvm
+  source: https://github.com/BstLabs/py-clvm
+  description: CLVM — command line tool for managing cloud VM instances on AWS, Azure
+    and GCP, built on DynaCLI.
+  publisher: BST Labs <bstlabs@caios.io>
+  official: true
+- language: python
+  registry: pypi
+  name: pyjdict
+  version: 1.0.6
+  url: https://pypi.org/project/pyjdict/
+  install: pip install pyjdict
+  source: https://github.com/BstLabs/py-jdict
+  description: JavaScript-like Python dictionary with dot-notation attribute access.
+  publisher: BST Labs <bstlabs@caios.io>
+  official: true
+- language: python
+  registry: pypi
+  name: pycomposite
+  version: 1.0.2
+  url: https://pypi.org/project/pycomposite/
+  install: pip install pycomposite
+  source: https://github.com/BstLabs/py-composite
+  docs: https://bstlabs.github.io/py-composite
+  description: Generic implementation of the Composite design pattern as a Python class
+    decorator.
+  publisher: BST Labs <bstlabs@caios.io>
+  official: true
+- language: python
+  registry: pypi
+  name: authk
+  version: 1.0.5
+  url: https://pypi.org/project/authk/
+  install: pip install authk
+  source: https://github.com/BstLabs/py-authk
+  description: SSHD authorized_keys handling utility, built on DynaCLI and sshpubkeys.
+  publisher: BST Labs <bstlabs@caios.io>
+  official: true
+x-evidence:
+  fetched: '2026-08-02'
+  urls:
+  - https://api.github.com/orgs/BstLabs
+  - https://pypi.org/pypi/dynacli/json
+  - https://pypi.org/pypi/pyclvm/json
+  - https://pypi.org/pypi/pyjdict/json
+  - https://pypi.org/pypi/pycomposite/json
+  - https://pypi.org/pypi/authk/json
+  http_status: 200

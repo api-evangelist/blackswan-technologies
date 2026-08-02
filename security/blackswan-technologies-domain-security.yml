@@ -1,0 +1,45 @@
+generated: '2026-08-02'
+method: probed
+note: >-
+  probe-domain-security.py returned "unreachable" for this provider because the corporate
+  domain blackswantechnologies.ai no longer resolves in DNS. This file records the manual
+  probe of both the defunct corporate domain and caios.io, the surviving domain of BST
+  LABS (BlackSwan Technologies' software engineering unit). Absence of a record is valid
+  recorded data.
+hosts:
+- host: www.blackswantechnologies.ai
+  https: false
+  reachable: false
+  reason: DNS resolution failure (no NS, SOA, A, MX or TXT records)
+- host: caios.io
+  https: true
+  http_status: 403
+  http_status_note: Cloudflare challenge on every path, including the site root
+  tls_version: TLSv1.3
+  cert_subject: CN=caios.io
+  cert_issuer: "C=US, O=Let's Encrypt, CN=YE2"
+  cert_not_after: '2026-10-17T08:22:51Z'
+  cert_verify: ok
+  hsts: false
+  server: cloudflare
+domains:
+- domain: blackswantechnologies.ai
+  resolves: false
+  ns: []
+  soa: null
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
+  status: lapsed
+- domain: caios.io
+  resolves: true
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
+  mx: []
+  status: active-behind-cloudflare
+x-evidence:
+  fetched: '2026-08-02'
+  tooling: dig (NS/SOA/A/MX/TXT/CAA/_dmarc), openssl s_client, curl -I

@@ -1,17 +1,57 @@
 aid: blackswan-technologies
 name: BlackSwan Technologies
-description: 'BlackSwan Technologies is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'BlackSwan Technologies is an enterprise AI software company founded in
+  2014 by Michael and Elinoar Ouliel, headquartered in London with engineering across
+  Israel, Poland and India. Its flagship product, ELEMENT, is marketed as an Enterprise
+  AI Operating System: a low/no-code platform-as-a-service combining a data fabric,
+  knowledge graphs, machine learning and composite AI so banks and other regulated
+  enterprises can assemble applications for KYC on demand, enhanced due diligence,
+  financial crime, transaction intelligence, market intelligence and underwriting without
+  first consolidating their data. Its software engineering unit, BST LABS, built and
+  open-sourced CAIOS (Cloud AI Operating System) and a family of Python developer tools
+  (DynaCLI, CLVM, PyJdict, PyComposite, AuthK). BlackSwan Technologies was acquired
+  by HUB Cyber Security Ltd. (NASDAQ: HUBC) in a stock-for-stock transaction that closed
+  on 27 January 2025, and its corporate domain blackswantechnologies.ai no longer resolves
+  in DNS; the secured data fabric technology is now marketed under HUB Technologies.
+  No public API, developer portal, or machine-readable API contract (OpenAPI, GraphQL,
+  AsyncAPI, MCP, A2A) was found for BlackSwan Technologies during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/blackswan-technologies/refs/heads/main/apis.yml
+image: https://web.archive.org/web/20201023224149if_/https://blackswantechnologies.ai/wp-content/uploads/2018/11/cropped-logo_small.png
 x-type: company
 x-source: harvest:secondary-market
+x-harvest-source-url: https://forgeglobal.com/blackswan-technologies_stock/
 x-tier: stub
 x-tier-reason: harvest
+x-status: acquired
+x-acquisition:
+  acquirer: HUB Cyber Security Ltd.
+  acquirer_ticker: 'NASDAQ: HUBC'
+  announced: '2025-01-16'
+  closed: '2025-01-27'
+  structure: stock-for-stock
+  successor_site: https://hub-technologies.com/
+  source: https://www.globenewswire.com/news-release/2025/01/27/3015669/0/en/HUB-Cyber-Security-Completes-Acquisition-of-BlackSwan-Technologies-to-Drive-AI-Powered-Data-Solutions-for-Global-Enterprises.html
+x-domain-status:
+  domain: blackswantechnologies.ai
+  resolves: false
+  checked: '2026-08-02'
+  note: No NS or SOA records; every host under blackswantechnologies.ai fails DNS resolution.
+    The corporate site archived at web.archive.org was a WordPress marketing site with
+    no developer, docs, or API section.
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Company
+- Artificial Intelligence
+- Data Fabric
+- Knowledge Graphs
+- Enterprise Software
+- Financial Crime
+- KYC
+- Compliance
+- Open Source
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +60,43 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/blackswan-technologies_stock/
+  name: BlackSwan Technologies (corporate site — domain lapsed, does not resolve)
+  url: https://www.blackswantechnologies.ai/
+  x-http-status: 0
+  x-status: defunct
+- type: LinkedIn
+  name: BlackSwan Technologies on LinkedIn
+  url: https://www.linkedin.com/company/blackswantechnologies
+- type: Crunchbase
+  name: BlackSwan Technologies on Crunchbase
+  url: https://www.crunchbase.com/organization/blackswan-technologies
+- type: GitHubOrganization
+  name: BST LABS (BlackSwan Technologies software engineering unit)
+  url: https://github.com/BstLabs
+- type: OpenSource
+  name: BST LABS open source repositories
+  url: https://github.com/orgs/BstLabs/repositories
+- type: Documentation
+  name: DynaCLI documentation (BST LABS)
+  url: https://bstlabs.github.io/py-dynacli/
+- type: Packages
+  name: Published packages
+  url: packages/blackswan-technologies-packages.yml
+- type: CLI
+  name: Command line tools
+  url: cli/blackswan-technologies-cli.yml
+- type: ChangeLog
+  name: Open source release changelog
+  url: changelog/blackswan-technologies-changelog.yml
+- type: LLMsTxt
+  name: llms.txt
+  url: llms/blackswan-technologies-llms.txt
+- type: DomainSecurity
+  name: Domain security probe
+  url: security/blackswan-technologies-domain-security.yml
+
+x-enrichment:
+  date: '2026-08-02'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1

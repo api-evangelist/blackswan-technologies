@@ -1,0 +1,42 @@
+generated: '2026-08-02'
+method: probed
+result: none
+note: >-
+  No /.well-known/ discovery document was found on any BlackSwan Technologies host.
+  The corporate host (blackswantechnologies.ai) no longer resolves in DNS at all; the
+  CAIOS product host answers every request with a Cloudflare 403 challenge, so no anonymous
+  document could be retrieved from it; the BST LABS documentation host is GitHub Pages
+  and returns 404 for every well-known path. No file was saved and no WellKnown /
+  SecurityTxt / AgentCard pointer is wired, because there is nothing to point at.
+hosts:
+- host: www.blackswantechnologies.ai
+  reachable: false
+  reason: DNS resolution failure — no NS or SOA records for blackswantechnologies.ai
+  documents:
+  - {path: /.well-known/security.txt, status: 0}
+- host: caios.io
+  reachable: true
+  reason: Cloudflare challenge (HTTP 403) on every path, including the site root
+  documents:
+  - {path: /.well-known/security.txt, status: 403}
+  - {path: /.well-known/openid-configuration, status: 403}
+  - {path: /.well-known/oauth-authorization-server, status: 403}
+  - {path: /.well-known/api-catalog, status: 403}
+  - {path: /.well-known/ai-plugin.json, status: 403}
+  - {path: /.well-known/agent-card.json, status: 403}
+  - {path: /.well-known/agent.json, status: 403}
+  - {path: /llms.txt, status: 403}
+- host: bstlabs.github.io
+  reachable: true
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /llms.txt, status: 404}
+x-evidence:
+  fetched: '2026-08-02'
+  method: HTTPS GET with a browser user-agent, redirects followed
