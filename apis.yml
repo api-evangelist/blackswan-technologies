@@ -38,7 +38,7 @@ x-domain-status:
   note: No NS or SOA records; every host under blackswantechnologies.ai fails DNS resolution.
     The corporate site archived at web.archive.org was a WordPress marketing site with
     no developer, docs, or API section.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
