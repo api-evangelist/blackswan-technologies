@@ -16,6 +16,17 @@ description: 'BlackSwan Technologies is an enterprise AI software company founde
   No public API, developer portal, or machine-readable API contract (OpenAPI, GraphQL,
   AsyncAPI, MCP, A2A) was found for BlackSwan Technologies during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/blackswan-technologies/refs/heads/main/apis.yml
+deliveryModel:
+  model: library
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Library · distributed through package registries, no callable service
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://web.archive.org/web/20201023224149if_/https://blackswantechnologies.ai/wp-content/uploads/2018/11/cropped-logo_small.png
 x-type: company
 x-source: harvest:secondary-market
