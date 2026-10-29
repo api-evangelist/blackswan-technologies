@@ -64,48 +64,46 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Enterprise AI software company (founded 2014, London) behind **ELEMENT**, marketed as an
-"Enterprise AI Operating System" — a low/no-code platform-as-a-service combining a data
-fabric, knowledge graphs, machine learning and composite AI for regulated enterprises:
-KYC on demand, enhanced due diligence, financial crime, transaction intelligence, market
-intelligence and underwriting.
+> **Acquired or rebranded.** This company was acquired, merged or renamed. Its API, if it still exists, is offered under another name. This profile is kept as a historical record and is not maintained or rated.
 
-## Status: acquired, corporate domain lapsed
+BlackSwan Technologies is an enterprise AI software company founded in 2014 by Michael and Elinoar Ouliel, headquartered in London with engineering across Israel, Poland and India. Its flagship product, ELEMENT, is marketed as an Enterprise AI Operating System: a low/no-code platform-as-a-service combining a data fabric, knowledge graphs, machine learning and composite AI so banks and other regulated enterprises can assemble applications for KYC on demand, enhanced due diligence, financial crime, transaction intelligence, market intelligence and underwriting without first consolidating their data. Its software engineering unit, BST LABS, built and open-sourced CAIOS (Cloud AI Operating System) and a family of Python developer tools (DynaCLI, CLVM, PyJdict, PyComposite, AuthK). BlackSwan Technologies was acquired by HUB Cyber Security Ltd. (NASDAQ: HUBC) in a stock-for-stock transaction that closed on 27 January 2025, and its corporate domain blackswantechnologies.ai no longer resolves in DNS; the secured data fabric technology is now marketed under HUB Technologies. No public API, developer portal, or machine-readable API contract (OpenAPI, GraphQL, AsyncAPI, MCP, A2A) was found for BlackSwan Technologies during enrichment.
 
-- **Acquired by HUB Cyber Security Ltd. (NASDAQ: HUBC)** — announced 2025-01-16, closed
-  2025-01-27, stock-for-stock. The secured data fabric technology is now marketed under
-  [HUB Technologies](https://hub-technologies.com/).
-- **`blackswantechnologies.ai` no longer resolves** — no NS or SOA records as of
-  2026-08-02. The archived corporate site was a WordPress marketing site with no
-  developer, docs or API section.
+**Areas:** Company · Artificial Intelligence · Data Fabric · Knowledge Graph · Enterprise Software · Financial Crime · KYC · Compliance · Open Source · Acquired
 
-## API surface
+## BlackSwan Technologies on APIs.io (historical record)
 
-**None found.** Contract discovery was run against every known host (corporate domain,
-`caios.io`, `bstlabs.github.io`) for OpenAPI/Swagger, GraphQL introspection, MCP
-`tools/list`, AsyncAPI, and A2A agent cards at both `/.well-known/agent-card.json` and
-the legacy `/.well-known/agent.json`. Every probe missed — see
-[`well-known/`](well-known/blackswan-technologies-well-known.yml).
+Everything profiled for BlackSwan Technologies is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/blackswan-technologies/](https://apis.io/providers/blackswan-technologies/)** — or go straight to one of the APIs or properties below.
 
-## Live public developer surface
+### Published properties
 
-The only live surface is the open source published by **BST LABS**, BlackSwan
-Technologies' software engineering unit and the team behind CAIOS (Cloud AI Operating
-System):
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- [github.com/BstLabs](https://github.com/BstLabs) — 10 public repositories
-- [DynaCLI](https://pypi.org/project/dynacli/) · [CLVM](https://pypi.org/project/pyclvm/) ·
-  [PyJdict](https://pypi.org/project/pyjdict/) · [PyComposite](https://pypi.org/project/pycomposite/) ·
-  [AuthK](https://pypi.org/project/authk/)
-- [DynaCLI documentation](https://bstlabs.github.io/py-dynacli/)
+#### Security (1)
 
-## Artifacts
+Authentication, trust centre, and vulnerability disclosure.
 
-| Artifact | File |
-|---|---|
-| Packages | [`packages/blackswan-technologies-packages.yml`](packages/blackswan-technologies-packages.yml) |
-| CLI | [`cli/blackswan-technologies-cli.yml`](cli/blackswan-technologies-cli.yml) |
-| Changelog | [`changelog/blackswan-technologies-changelog.yml`](changelog/blackswan-technologies-changelog.yml) |
-| llms.txt | [`llms/blackswan-technologies-llms.txt`](llms/blackswan-technologies-llms.txt) |
-| Domain security | [`security/blackswan-technologies-domain-security.yml`](security/blackswan-technologies-domain-security.yml) |
-| Well-known probe | [`well-known/blackswan-technologies-well-known.yml`](well-known/blackswan-technologies-well-known.yml) |
+- [Blackswan Technologies Domain Security](https://apis.io/security/blackswan-technologies/blackswan-technologies-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.blackswantechnologies.ai/)
+- [Documentation](https://bstlabs.github.io/py-dynacli/)
+- [GitHub](https://github.com/BstLabs)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as acquired or rebranded, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for BlackSwan Technologies: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/blackswan-technologies/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
